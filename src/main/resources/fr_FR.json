@@ -1,6 +1,6 @@
 {
-  "werewolf": {
-    "name": "WereWolfPlugin",
+  "lotr": {
+    "name": "LOTRPlugin",
     "description_plugin": "Plugin de base",
     "lovers": {
       "lover": {
@@ -1071,6 +1071,36 @@
           "life_detect_day": "Vous commencez à détecter les joueurs avec peu de vie dès le jour §b&number&§f",
           "take_damage_day": "Vous prendrez des dégats dès le jour §b&number&§f"
         }
+      },
+      "aragorn": {
+        "display": "Aragorn",
+        "description": "Un roi",
+        "effects": "Vous avez résistance 1 permanent et vous possedez force 1 de jour"
+      },
+      "gimli": {
+        "display": "Gimli",
+        "description": "Vous êtes un nain",
+        "effects": "Vous avez résistance 1 permanent",
+        "items": "Vous possédez une hache en or. Quand vous faites un click droit sur un joueur situé à moins de &distance& blocks vous lui infligez weakness et slowness pendant &duration& secondes (§b&time&§r de rechargement)",
+        "timers": {
+          "cooldown_axe": "Le temps de rechargement de la hache de Gimli"
+        },
+        "configurations": {
+          "axe_seconds": "La durée pendant laquelle les effets s'appliquent au joueur touché",
+          "axe_distance": "La distance maximale à laquelle Gimli peut affecter un joueur"
+        }
+      },
+      "gandalf": {
+        "display": "Gandalf",
+        "description": "Vous êtes un vieux monsieur barbu qui a besoins de son bâton\n&amount& fois dans la partie, avec §b&time&§r d'interval, vous pouvez observer le contenu de l'inventaire d'un joueur avec la commande §c/lotr voir§f",
+        "command": "voir",
+        "description_command": "/lotr voir",
+        "timers": {
+          "inventory_cooldown": "Le temps de rechargement pour voir l'inventaire"
+        },
+        "configurations": {
+          "inventory_amount": "Le nombre de fois que vous pouvez observer l'inventaire d'un joueur"
+        }
       }
     },
     "announcement": {
@@ -2006,8 +2036,8 @@
       "bar": "§r§b§m§l-+-----------------------------------+-§r§r§r§f"
     },
     "categories": {
-      "villager": "Villageois",
-      "werewolf": "Loups Garous",
+      "ring_community": "La communauté de l'anneau",
+      "dark_side": "Le camp des ténèbres",
       "neutral": "Neutres",
       "addons": "Rôles Addons"
     },
